@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "NewRepoSchematic",
+    "title": "ng new options schema",
+    "type": "object",
+    "description": "Initialise a new project",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the project",
+            "x-prompt": "Name:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "tbc-auth": {
+            "type": "boolean",
+            "description": "Generate project with tbc-auth",
+            "x-prompt": "Add tbc-auth:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    }
+}

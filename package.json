@@ -1,10 +1,10 @@
 {
-  "name": "new-project",
-  "version": "0.0.0",
+  "name": "new-project-by-giorgi",
+  "version": "0.0.6",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "run": "schematics .:new-project --debug=true",
+    "run": "schematics .:new-project-by-giorgi --debug=true",
     "watch": "tsc -p tsconfig.json --watch",
     "schema-to-ts": "node dist/utils/convert-chema-to-ts-interface.js",
     "test": "npm run build && jasmine src/**/*_spec.js"

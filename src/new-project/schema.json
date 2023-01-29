@@ -20,7 +20,7 @@
             "x-prompt": "Add tbc-auth:",
             "$default": {
                 "$source": "argv",
-                "index": 0
+                "index": 1
             }
         }
     }

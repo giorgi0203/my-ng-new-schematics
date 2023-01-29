@@ -6,7 +6,7 @@ import { Schema as ApplicationOptions, Style } from '@schematics/angular/ng-new/
 
 // You don't have to export the function as default. You can also have more than one rule factory
 // per file.
-export function newProject(_options: any): Rule {
+export function newProjectByGiorgi(_options: any): Rule {
   // console.log('Hello from your new schematic!',_options)
   const name = _options.name;
   console.log('name', name);
@@ -43,6 +43,7 @@ function generateAngularApp(name:string): Rule {
     inlineStyle: false,
     inlineTemplate: false
   }
+  
   return externalSchematic('@schematics/angular', 'ng-new', options);
 }
 
